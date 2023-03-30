@@ -1,0 +1,124 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a77ff;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.auth__popup{
+    width: 100%;
+    max-width: 450px;
+    min-height: 600px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.animation__circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0);
+    border: 18px solid #fff;
+    border-radius: 50%;
+    animation: scaleout 2s ease-in-out forwards;
+    opacity: .7;
+}
+
+@keyframes scaleout {
+    80%{
+        transform: scale(12);
+    }
+    100%{
+        transform: scale(10);
+    }
+}
+
+.auth__popup{
+    
+
+    ul{
+        display: flex;
+
+        li{
+            width: 50%;
+            min-height: 60px;
+            border-bottom: 1px solid rgb(198, 193, 193);
+            &:has(.auth__link--active){
+                border-bottom: 2px solid #002f34;
+            }
+
+            .auth__link{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000;
+                width: 100%;
+                height: 100%;
+                
+
+                &--active{
+                    color: #002f34;
+                    font-weight: 600;
+                    
+                }
+
+            }
+        }
+    }
+}
+.auth__create{
+    padding: 1rem;
+    font-family: sans-serif;
+}
+.auth__google{
+    background-color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+
+    svg{
+        font-size: 24px;
+    }
+}
+.form__auth{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    border-top: 1px solid #000;
+    padding-top: 50px;
+
+
+    input{
+        height: 50px;
+        text-indent: 10px;
+        font-size: 18px;
+        outline: none;
+        border-radius: 5px;
+        background-color: #f2f4f5;
+        border: none;
+        border-bottom: 2px solid transparent;
+
+        &:focus{
+            border-bottom: 2px solid #002f34;
+        }
+    }
+    button{
+            height: 50px;
+            border: none;
+            background-color: #002f34;
+            color: #fff;
+            border-radius: 5px;
+           
+    }
+}

@@ -1,0 +1,42 @@
+.like_heart {
+  font-size: 30px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.note_liked_products {
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.product__item-info {
+  display: flex;
+  flex-direction: column;
+
+  .produc_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.like__price{
+    margin-bottom: 50px;
+}
+
+  .btn__like-products {
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    background-color: #002f34;
+    color: #fff;
+
+  }
+}

@@ -1,0 +1,42 @@
+.single__category--wrapper{
+    padding-top: 60px;
+}
+.category__item--products{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+    padding: 1rem;
+
+    h2{
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    strong{
+        font-weight: 600;
+        font-size: 38px;
+        display: flex;
+        margin-top: 75px;
+    }
+    .btn__searchResult{
+        padding: 20px 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        background-color: #002f34;
+        color: #fff;
+        margin-top: 25px;
+    }
+}
+
+.category__img{
+    width: 400px;
+    height: auto;
+    
+}
