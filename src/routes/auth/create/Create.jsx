@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import instance from "../../../api/instance";
 
+
 const Create = () => {
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
@@ -23,11 +24,10 @@ const Create = () => {
         dispatch(
             {
                 email: result.user.multiFactor.user.displayName,
-                type: "CREATE_NAME"
+                type: "CREATE_NAME_WITH_GOOGLE"
             }
         )
         if (result) history.push("/");
-        console.log(result);
       })
       .catch(function (error) {
         console.error(error);
