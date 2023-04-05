@@ -10,7 +10,6 @@ const Shop = () => {
     const dispatch = useDispatch()
 
   const addToBuy = useSelector((state) => state.ShopReducer.addToBuy);
-  console.log(addToBuy);
 
   function trimDescription(str) {
     return str.split(" ").splice(0, 10).join(" ") + "...";
