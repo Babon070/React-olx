@@ -24,6 +24,13 @@ const Products = () => {
     function removeFromLikeProducts(data) {
         dispatch({ id: data.id,type: "REMOVE_FROM_LIKE" })
     }
+
+  
+
+      const trimDescProducts = (str) => {
+        return str?.split(" ").slice(0, 10).join(" ") + '...';
+
+      }
    
 
     return (
@@ -38,7 +45,7 @@ const Products = () => {
                    
                     <div className='product__item--info'>
                         <h2>{data.title}</h2>
-                        <p>{data.description}</p>
+                        <p>{trimDescProducts(data.description)}</p>
                         <strong>${data.price}</strong>
                         <div className='like_heart'>
                             <button>Add to card</button>
