@@ -16,7 +16,7 @@ const Categories = ({}) => {
         <section className='categories'>
             <Container>
                     <h3 className='categories__title'>
-                        {t("Category_title")}
+                        {t("categories")}
                     </h3>
                 <div className="categories__wrapper">
                     {

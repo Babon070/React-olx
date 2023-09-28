@@ -6,11 +6,13 @@ import {BsSearch} from 'react-icons/bs'
 import './Search.scss'
 import { Link } from 'react-router-dom';
 import instance from '../../api/instance';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Search = () => {
     const [serachResult, setSerachResult] = useState([])
     const [searchValue, setSearchValue] = useState("")
-    
+    const { t } = useTranslation()
 
     const giveSearchInfos = (e) => {
         setSearchValue(e.target.value)
@@ -37,7 +39,7 @@ const Search = () => {
                             <input onChange={giveSearchInfos}
                             type="text"
                             className='search__input'
-                            placeholder='1 036 638 e‘lonlar yoningizda'
+                            placeholder={t("serachInput_placeholder")}
                             />
                             { serachResult?.length > 0 && searchValue
                                 ? <div className='search__suggestions'>
@@ -55,7 +57,7 @@ const Search = () => {
                         </div>
                         <button className='btn__search'>
                         <BsSearch/>
-                            Search
+                            {t("searchComponent_button")}
                         </button>
                     </div>
                 </form>

@@ -79,7 +79,7 @@ const Header = () => {
                           }
                            
                        </Link>
-                       <RedirectButton  headerButton="/newpost" title="E'lon berish" type="light" ></RedirectButton>
+                       <RedirectButton  headerButton="/newpost" title={t("header_button")} type="light" ></RedirectButton>
                     </nav>
                 </div>
             </div>
