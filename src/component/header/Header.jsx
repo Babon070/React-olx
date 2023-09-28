@@ -12,6 +12,7 @@ const Header = () => {
     const { t } = useTranslation();
     const location = useLocation();
     const takeUserData = useSelector(state => state.mainReducer.email);
+    console.log(takeUserData);
     const likedProducts = useSelector(state => state.likeReducer.likeProducts)
     const addToBuy = useSelector(state=> state.ShopReducer.addToBuy)
     const navigator = useRef()

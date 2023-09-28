@@ -2,8 +2,19 @@
     "Header_message": "Сообщения",
     "Header_accaunt": "Ваш профиль",
     "Category_title": "Главные категории",
-    "Prosucts_title": "Премиум объявления"
+    "Prosucts_title": "Премиум объявления",
     
+
+    "header_button" : "Податъ обявление",
+    "searchComponent_button" : "Поиск",
+    "serachInput_placeholder" : "1 227 243 объявлений рядом",
+    "categories" : "Разделы на сервисе OLX",
+    "main_product_title" : "VIP-объявления",
+    "auth_create" : "Регистрация",
+    "auth_login" : "Войти",
+    "basket_empty-title": "В корзине пока пусто",
+    "basket_empty_p": " Загляните на главную, чтобы выбрать товары или найдите нужное в поиске",
+    "basket_empty-btn": "Перейти на главную"
 }
 
 

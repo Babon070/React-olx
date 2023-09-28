@@ -13,7 +13,7 @@ const Create = () => {
     name: "",
     email: "",
     password: "",
-    avatar: "",
+    avatar: "https://sun1-56.userapi.com/s/v1/ig1/eiKBiufKrF2lYLTeSjGYTLHlwDczW5qAUT0Fi8VXDWR2JK3gtkyZRmnABnfAOU0HdXVnE6Ri.jpg?size=400x400&quality=96&crop=99,99,793,793&ava=1",
   });
   const history = useHistory();
 
@@ -76,11 +76,11 @@ const Create = () => {
             setFormData({ ...formData, password: e.target.value })
           }
         />
-        <input
+        {/* <input
           type="url"
           placeholder="Avatar"
           onChange={(e) => setFormData({ ...formData, avatar: e.target.value })}
-        />
+        /> */}
         <button>Xisob yaratish</button>
       </form>
     </div>
