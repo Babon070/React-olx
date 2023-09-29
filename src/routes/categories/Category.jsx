@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import Search from '../../component/search/Search';
 import UseFetchData from '../../hooks/useFetchData';
 import Container from '../../utilis/Container';
 import './Category.scss'
@@ -17,6 +18,7 @@ const Category = () => {
     return (
         <section className='by__category'>
             <Container>
+                <Search/>
                 <div className='single__category--wrapper'>
                     {
                         data.map(category => 
@@ -24,7 +26,7 @@ const Category = () => {
                                 <Link to={`/products/${category.id}`}>
                                     <img className='category__img' src={category.images} alt="" />
                                 </Link>
-                                <div>
+                                <div className='title_categ'>
                                     <h2>{category.title}</h2>
                                     <p>{trimDesc(category.description)}</p>
                                     <strong>${category.price}</strong>
