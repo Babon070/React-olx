@@ -14,7 +14,6 @@ const MainProducts = () => {
     const addToBuy = useSelector(state=> state.ShopReducer.addToBuy)
     console.log(addToBuy);
 
-
   const dispatch = useDispatch();
   const [data, loading] = useFetchData("/products?offset=0&limit=20");
   const { t } = useTranslation();
@@ -41,13 +40,11 @@ const MainProducts = () => {
 
   function removeFromLikeProducts(products){
     dispatch({id: products.id, type: "REMOVE_FROM_LIKE"})
-
   }
+
   function removeFromShopProducts(products){
     dispatch({id: products.id, type: "REMOVE_BY_SHOP"})
   }
-
- 
 
   return (
     <section className="main__products">
@@ -87,6 +84,7 @@ const MainProducts = () => {
                   {
                      likedProducts.find(p => p?.id === products?.id) ? <AiFillHeart onClick={() => removeFromLikeProducts(products)} style={{color: 'red', cursor: 'pointer'}} /> : <AiOutlineHeart style={{cursor: 'pointer'}} onClick={() => addToLike(products)} />
                   }
+                  
                 </div>
               </div>
             ))

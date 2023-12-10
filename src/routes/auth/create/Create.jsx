@@ -27,13 +27,17 @@ const Create = () => {
                 type: "CREATE_NAME_WITH_GOOGLE"
             }
         )
+        
         if (result) history.push("/");
+        console.log(result.user.multiFactor.user.displayName);
+        // console.log(result.user.multiFactor.user);
+
       })
       .catch(function (error) {
         console.error(error);
       });
-  };
-
+    };
+    
   const ceateUserWithEmail = (e) => {
     e.preventDefault();
     instance
@@ -43,8 +47,9 @@ const Create = () => {
           dispatch(
             { 
                 email: response.data.email, 
-                type: "CREATE_USER" 
+                type: "CREATE_USER",
             });
+            console.log(response);
             history.push('/')
         }
       })

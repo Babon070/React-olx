@@ -14,5 +14,7 @@
     "auth_login" : "Kirish",
     "basket_empty-title": "Tanlangan maxsulot yo'q",
     "basket_empty_p": "Kerakli maxsulotni topish uchun asosiy bo'limga qayting",
-    "basket_empty-btn": "Asosiy bo'limga qaytish!"
+    "basket_empty-btn": "Asosiy bo'limga qaytish!",
+    "product_sale": "Kelishilgan"
+
 }

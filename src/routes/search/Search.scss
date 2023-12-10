@@ -1,45 +1,80 @@
-.search__result--wrapper{
-    font-family: sans-serif;
+.search__result--wrapper {
+  font-family: sans-serif;
 }
-.product__item--search{
+.product__item--search {
+  display: flex;
+  margin: 20px 0;
+  padding: 1rem;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  .product__img {
+    border-radius: 3px;
+    width: 216px;
+    min-height: 200px;
+  }
+
+  .search_wrapper {
     display: flex;
-    margin: 20px 0;
-    padding: 1rem;
-    gap: 30px;
-    background-color: #fff;
-    border-radius: 5px;
-    
+    // align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
 
-    .product__img{
-        border-radius: 3px;
-        width: 350px;
-        min-height: 200px;
+    &--title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .search_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .prices {
+    strong {
+      font-size: 26px;
+      font-weight: 600;
+      display: flex;
+    }
+    small {
+      font-size: 14px;
+      color: #545b62;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    color: #545b62;
+    font-weight: 500;
+  }
+
+  .search_btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .btn__searchResult {
+      padding: 15px 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+      background-color: #002f34;
+      color: #fff;
     }
 
-    h2{
-        font-size: 42px;
-        font-weight: 600;
-        margin-bottom: 30px;
+    svg {
+      font-size: 24px;
     }
-    p{
-        font-size: 25px;
-        font-weight: 500;
-    }
-    strong{
-        font-weight: 600;
-        font-size: 38px;
-        display: flex;
-        margin-top: 40px;
-    }
-    .btn__searchResult{
-        padding: 20px 40px;
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
-        font-size: 16px;
-        background-color: #002f34;
-        color: #fff;
-        margin-top: 25px;
-    }
-  
+  }
 }

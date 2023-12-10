@@ -5,12 +5,14 @@ import useFetchData from "../../hooks/useFetchData";
 import Container from "../../utilis/Container";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { useSelector, useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 const Products = () => {
   const likedProducts = useSelector((state) => state.likeReducer.likeProducts);
   const productIdData = useParams();
   const dispatch = useDispatch();
   const [data, setLoading] = useFetchData(`/products/${productIdData.id}`);
   console.log(data);
+  const { t } = useTranslation()
 
   function addToLike(products) {
     dispatch({
@@ -47,9 +49,10 @@ const Products = () => {
 
           <div className="product__item--info">
             <div className="title_product">
+              <div>
                 <h2>{data.title}</h2>
                 <p>{trimDescProducts(data.description)}</p>
-                <strong>${data.price}</strong>
+              </div>
 
               <div className="like_heart_product">
                 <button>Add to card</button>
@@ -65,6 +68,12 @@ const Products = () => {
                   />
                 )}
               </div>
+            </div>
+            <div className="prises">
+              <strong>
+                ${data.price}
+                <small>{t("product_sale")}</small>
+              </strong>
             </div>
           </div>
         </div>

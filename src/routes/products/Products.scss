@@ -1,58 +1,69 @@
-.single__product{
-    background-color: #fff;
-    padding: 60px 0;
+.single__product {
+  padding: 40px 0;
+  min-height: 60vh;
 }
-.product__item--info{
+.product__item--info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.product__wrapper {
+  display: flex;
+  gap: 0 30px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+
+  .title_product {
     display: flex;
-}
-.product__wrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+
+  h2 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  p {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #406367;
+  }
+  strong {
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  small{
+    color: #406367;
+    font-size: 12px;
+  }
+  button {
+    padding: 15px 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    background-color: #002f34;
+    color: #fff;
+  }
+  .like_heart_product {
+    font-size: 30px;
     display: flex;
-    gap: 0 30px;
-    padding: 1rem;
-    border-radius: 10px;
-
-    .title_product{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-
-    }
-
-    h2{
-        font-size: 35px;
-        font-weight: 600;
-    }
-    p{
-        font-size: 30px;
-        font-weight: 500;
-    }
-    strong{
-        display: block;
-        font-size: 38px;
-        font-weight: 600;
-    }
-    button{
-        padding: 20px 40px;
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
-        font-size: 16px;
-        background-color: #002f34;
-        color: #fff;
-    }
-    .like_heart_product{
-        font-size: 25px;
-        display: flex;
-        align-items: center;
-        gap: 0 20px;
-        
-    }
-   
+    align-items: center;
+    gap: 0 20px;
+  }
 }
 
-.single__product--img{
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
+.prises{
+    display: flex;
+  }
+
+.single__product--img {
+  width: 216px;
+  height: 220px;
+  border-radius: 10px;
 }

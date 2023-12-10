@@ -4,7 +4,7 @@ const initialState = {
 };
 
 const mainReducer = (state = initialState, action) => {
-  console.log(action.email);
+  console.log(action);
   switch (action.type) {
     case "CREATE_USER":
       return { email: action.email };

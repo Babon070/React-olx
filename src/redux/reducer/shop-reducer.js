@@ -3,7 +3,6 @@ const initalState = {
 }
 
 const ShopReducer = (state = initalState, action) => {
-    console.log(action);
     switch(action.type){
         case "ADD_TO_BUY":
             return {
