@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import instance from '../api/instance';
 
 const UseFetchdata = (ENDPOINT) => {
+    window.scroll(0, 0)
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
 
